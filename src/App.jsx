@@ -195,6 +195,7 @@ export default function App() {
   }
 
   // react/html formating code to be returned for the webpage being used/called in main.jsx
+  // each page represents a form that displays diffrent information
   return (
     <main className="page">
       <section className="auth-card">

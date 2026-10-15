@@ -11,6 +11,7 @@ const PORT = Number(process.env.PORT) || 5000;
 // Constants:
 const PASS_CHAR_MIN = 8;
 const USERNAME_LIMIT = 32;
+// For projects
 const PROJECT_NAME_LIMIT = 100;
 const VALID_STATUSES = ["Planning", "Active", "Completed"];
 
@@ -202,7 +203,7 @@ app.post("/api/projects", async (req, res) => {
   }
 });
 
-// Get to get users from database
+// Get, to get users from database
 app.get("/api/users", async (req, res) => {
   try {
     const usersCollection = getDb().collection("users");
